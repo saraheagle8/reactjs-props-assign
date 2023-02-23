@@ -7,12 +7,11 @@ import Intro from './components/Intro';
 import BlogPost from './components/BlogPost';
 import Skills from './components/Skills';
 
-var skillnames = ['Java', 'Javascript', 'React', 'Databases'];
 var images = [
-  'https://ctechhosting.com/images-354/java.png',
-  'python.png',
-  'react.png',
-  'sql.png',
+  { name: 'Java', image: 'https://ctechhosting.com/images-354/java.png' },
+  { name: 'Python', image: 'https://ctechhosting.com/images-354/python.png' },
+  { name: 'React', image: 'https://ctechhosting.com/images-354/react.png' },
+  { name: 'Databases', image: 'https://ctechhosting.com/images-354/sql.png' },
 ];
 
 const rootElement = document.getElementById('root');
@@ -23,6 +22,6 @@ root.render(
     <Nav />
     <Intro />
     <BlogPost />
-    <Skills images={images} skillnames={skillnames} />
+    <Skills images={images} />
   </StrictMode>
 );
